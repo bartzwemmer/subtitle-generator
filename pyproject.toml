@@ -1,0 +1,22 @@
+[project]
+name = "whisper-srt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "B Zwemmer", email = "b.zwemmer@kadaster.nl" }
+]
+requires-python = ">=3.10.11"
+dependencies = [
+    "ffmpeg>=1.4",
+    "ffmpeg-python>=0.2.0",
+    "moviepy>=2.1.2",
+    "openai-whisper>=20240930",
+]
+
+[project.scripts]
+whisper-srt = "whisper_srt:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
